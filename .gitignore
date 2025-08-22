@@ -21,9 +21,9 @@ Scripts/
 
 # Django specific
 *.log
-db.sqlite3                # local test ke liye, PostgreSQL me ye nahi lagega
-media/                     # uploaded media files (local only)
-staticfiles/               # collectstatic output
+db.sqlite3
+media/
+staticfiles/
 *.pot
 *.pyc
 *.mo
@@ -36,10 +36,10 @@ staticfiles/               # collectstatic output
 # =========================
 # Environment variables / secrets
 # =========================
-.env                       # real environment variables (never push)
+.env 
 *.env
 .env.local
-secrets.json               # any sensitive config
+secrets.json
 
 # =========================
 # IDE / Editor
