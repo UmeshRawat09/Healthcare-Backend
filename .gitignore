@@ -1,0 +1,73 @@
+# =========================
+# Python & Django
+# =========================
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environment folders
+venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+bin/
+lib/
+Scripts/
+
+# Django specific
+*.log
+db.sqlite3                # local test ke liye, PostgreSQL me ye nahi lagega
+media/                     # uploaded media files (local only)
+staticfiles/               # collectstatic output
+*.pot
+*.pyc
+*.mo
+
+# Django migrations (cache only)
+*/migrations/__pycache__/
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# =========================
+# Environment variables / secrets
+# =========================
+.env                       # real environment variables (never push)
+*.env
+.env.local
+secrets.json               # any sensitive config
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# =========================
+# Test / Coverage
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# =========================
+# Node / Frontend (if any)
+# =========================
+node_modules/
+
+# =========================
+# Docker (if used)
+# =========================
+*.pid
+*.seed
+*.pid.lock
